@@ -156,7 +156,7 @@ export default function CenteredSearchForm() {
                 {filteredOptions.map((opt, idx) => (
                   <li
                     key={idx}
-                    className="flex justify-between font-medium gap-20 p-4 bg-white dark:bg-gray-800 rounded-lg shadow"
+                    className="flex justify-between font-[chinacat] gap-20 p-4 bg-white dark:bg-gray-800 rounded-lg shadow"
                   >
                     <span className="flex flex-row items-center-safe text-black dark:text-white">
                       {opt.label} ({opt.ext} - {opt.resolution})

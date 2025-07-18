@@ -11,7 +11,7 @@ const Header = () => {
         <ModeToggle></ModeToggle>
       </nav>
       <div className="flex flex-col gap-5 justify-center-safe items-center-safe">
-        <div>
+        <div className="border-2 border-cyan-400 border-dashed rounded-4xl">
           <Image
             className="rounded-4xl"
             src={Monica}
