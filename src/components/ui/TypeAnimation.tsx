@@ -6,13 +6,13 @@ const TitleDynamic = () => {
       className="font-mono"
       preRenderFirstString={true}
       sequence={[
-        "Download Media Youtube/Short",
+        "Download Youtube/Short Media",
         1000,
-        "Download Media Tik Tok",
+        "Download Tik Tok Media",
         1000,
-        "Download Media Facebook/Reals",
+        "Download Facebook/Reals Media",
         1000,
-        "Download Media Instagram",
+        "Download Instagram Media",
         1000,
         () => {
           console.log("Sequence completed");
