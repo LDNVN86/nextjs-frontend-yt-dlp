@@ -21,7 +21,7 @@ const Header = () => {
           ></Image>
         </div>
         <div className="flex flex-col justify-center-safe items-center-safe">
-          <div className="select-none text-center mb-4 text-sm md:text-2xl font-[chinacat] mt-3 leading-none tracking-tight text-gray-900  dark:text-white">
+          <div className="select-none text-center mb-4 text-sm md:text-2xl mt-3 leading-none tracking-tight text-gray-900  dark:text-white">
             <TitleDynamic></TitleDynamic>
           </div>
         </div>
