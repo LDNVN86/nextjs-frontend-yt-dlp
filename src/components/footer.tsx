@@ -10,7 +10,7 @@ export default function Footer() {
       </span>
       <div className="flex flex-wrap justify-center gap-3">
         <a
-          href="https://ldn86dev.io.vn/"
+          href="/"
           target="_blank"
           rel="noopener noreferrer"
           className="group relative inline-flex items-center px-4 py-2 overflow-hidden font-medium  text-sm bg-transparent"
