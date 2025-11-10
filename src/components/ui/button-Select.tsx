@@ -13,7 +13,7 @@ import { Filter } from "@/types/type";
 
 interface Props {
   onChange: (value: Filter) => void;
-  defaultFilter: string;
+  defaultFilter: Filter;
 }
 
 export function SelectFilter({ onChange, defaultFilter }: Props) {

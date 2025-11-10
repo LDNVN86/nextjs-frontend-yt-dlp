@@ -7,6 +7,13 @@ export const listFormats = async (url: string) => {
   return res;
 };
 
-export const downloaded = (url: string, format: string, title: string) => {
-  window.location.href = `/api/download?url=${url}&format=${format}&title=${title}`;
+export const downloaded = (url: string, format: string, title?: string) => {
+  const params = new URLSearchParams();
+  params.set("url", url);
+  params.set("format", format);
+  if (title) {
+    params.set("title", title);
+  }
+
+  window.location.href = `/api/download?${params.toString()}`;
 };

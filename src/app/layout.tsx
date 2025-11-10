@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={chewy.className}>
       <head />
-      <body className="bg-cyan-50 dark:bg-cyan-950">
+      <body suppressHydrationWarning className="bg-cyan-50 dark:bg-cyan-950">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

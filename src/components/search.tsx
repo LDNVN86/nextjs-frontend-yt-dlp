@@ -9,8 +9,6 @@ export default function CenteredSearchForm() {
   const [linkUrl, setUrl] = useState("");
   const [loading, setLoading] = useState(false);
   const [list, setList] = useState<ListFormats | null>(null);
-  const [thumbnail, setThumbnail] = useState<string | null>(null);
-  const [title, setTitle] = useState<string | null>(null);
 
   const handleFetch = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -21,8 +19,6 @@ export default function CenteredSearchForm() {
       const res = await listFormats(linkUrl);
       toast.success("Đã Tìm Thấy Danh Sách Fomat Cho Video");
       setList(res?.data);
-      setTitle(res?.data?.title);
-      setThumbnail(res?.data?.thumbnail);
     } catch (_err: unknown) {
       toast.error("Lỗi Lấy Dữ Liệu Từ URL❌, Vui Lòng Thử Lại Sau");
       throw _err;
@@ -79,13 +75,7 @@ export default function CenteredSearchForm() {
           </div>
         </form>
       </div>
-      <InfoMedia
-        title={title!}
-        url={linkUrl}
-        loading={loading}
-        list={list!}
-        thumbnail={thumbnail!}
-      ></InfoMedia>
+      <InfoMedia url={linkUrl} loading={loading} data={list}></InfoMedia>
     </div>
   );
 }
